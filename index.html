@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anisa's 60th Birthday - Iceland Adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇮🇸</text></svg>">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-brand">A&middot;60</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#itinerary" class="nav-link">Itinerary</a>
+      <a href="#messages" class="nav-link">Messages</a>
+      <a href="#travel" class="nav-link">Travel Info</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="aurora"></div>
+    <div class="hero-content">
+      <p class="hero-pretext">You're invited to</p>
+      <h1 class="hero-title">Anisa's <span class="gold">60th</span> Birthday</h1>
+      <div class="hero-divider">
+        <svg width="120" height="20" viewBox="0 0 120 20">
+          <path d="M0 10 Q30 0 60 10 Q90 20 120 10" stroke="#c9a84c" fill="none" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <p class="hero-subtitle">An Icelandic Adventure</p>
+      <p class="hero-date">July 30 &mdash; August 2, 2026</p>
+
+      <div class="countdown" id="countdown">
+        <div class="countdown-item">
+          <span class="countdown-number" id="days">---</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="hours">--</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="minutes">--</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="seconds">--</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+
+      <a href="#itinerary" class="hero-cta">Explore the Journey</a>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+
+  <!-- Itinerary Section -->
+  <section class="section itinerary-section" id="itinerary">
+    <div class="container">
+      <h2 class="section-title">The Journey</h2>
+      <p class="section-subtitle">Four days of wonder across Iceland's most spectacular landscapes</p>
+
+      <div class="timeline">
+        <!-- Day 1 -->
+        <div class="timeline-item" data-day="1">
+          <div class="timeline-marker">
+            <span class="day-badge">Day 1</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="card-header">
+                <h3>Arrival in Iceland</h3>
+                <span class="card-date">Thursday, July 30</span>
+              </div>
+              <div class="card-body">
+                <div class="card-icon">&#9992;</div>
+                <ul class="card-details">
+                  <li>Airport pickup with private coach (seats 29)</li>
+                  <li>Transfer to hotel &mdash; approx. 90 minutes</li>
+                  <li>Settle in and explore the area</li>
+                </ul>
+                <div class="card-accommodation">
+                  <span class="accommodation-label">Staying at</span>
+                  <span class="accommodation-name">Black Sand Hotel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="timeline-item" data-day="2">
+          <div class="timeline-marker">
+            <span class="day-badge">Day 2</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="card-header">
+                <h3>Golden Circle &amp; Fri&eth;heimar</h3>
+                <span class="card-date">Friday, July 31</span>
+              </div>
+              <div class="card-body">
+                <div class="card-icon">&#127755;</div>
+                <ul class="card-details">
+                  <li>Private guided tour of the Golden Circle</li>
+                  <li>Depart around 10:00&ndash;11:00am</li>
+                  <li>Private lunch at Fri&eth;heimar greenhouse restaurant</li>
+                  <li>Evening free at the hotel</li>
+                  <li class="highlight">Celebratory Birthday Dinner in Reykjavik</li>
+                  <li>Transfers provided &mdash; approx. 1 hour each way</li>
+                </ul>
+                <div class="card-accommodation">
+                  <span class="accommodation-label">Staying at</span>
+                  <span class="accommodation-name">Black Sand Hotel</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="timeline-item" data-day="3">
+          <div class="timeline-marker">
+            <span class="day-badge">Day 3</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="card-header">
+                <h3>Lava Tunnel &amp; Blue Lagoon</h3>
+                <span class="card-date">Saturday, August 1</span>
+              </div>
+              <div class="card-body">
+                <div class="card-icon">&#127747;</div>
+                <ul class="card-details">
+                  <li>Private Raufarh&oacute;lshellir Lava Tunnel Tour (1 hour)</li>
+                  <li>Sightseeing on the Reykjanes Peninsula</li>
+                  <li>Afternoon at the Blue Lagoon Retreat</li>
+                </ul>
+                <div class="card-accommodation">
+                  <span class="accommodation-label">Staying at</span>
+                  <span class="accommodation-name">Blue Lagoon Retreat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="timeline-item" data-day="4">
+          <div class="timeline-marker">
+            <span class="day-badge">Day 4</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-card">
+              <div class="card-header">
+                <h3>Discover Reykjavik</h3>
+                <span class="card-date">Sunday, August 2</span>
+              </div>
+              <div class="card-body">
+                <div class="card-icon">&#127961;</div>
+                <ul class="card-details">
+                  <li>Private guided Reykjavik city tour</li>
+                  <li>Free time to explore the city</li>
+                  <li class="highlight">Farewell Dinner</li>
+                </ul>
+                <div class="card-accommodation">
+                  <span class="accommodation-label">Staying at</span>
+                  <span class="accommodation-name">Blue Lagoon Retreat</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Messages Section -->
+  <section class="section messages-section" id="messages">
+    <div class="container">
+      <h2 class="section-title">Message Wall</h2>
+      <p class="section-subtitle">Share your wishes, updates, and excitement with the group</p>
+
+      <!-- Name Entry -->
+      <div class="name-entry" id="nameEntry">
+        <div class="name-entry-card">
+          <h3>Welcome! What's your name?</h3>
+          <p>Enter your name to join the conversation</p>
+          <div class="name-input-group">
+            <input type="text" id="userName" placeholder="Your name" class="name-input" maxlength="30">
+            <button id="joinBtn" class="btn-join">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Area -->
+      <div class="chat-container" id="chatContainer" style="display: none;">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <span class="chat-group-name">Iceland Adventure Group</span>
+            <span class="chat-member-count" id="memberCount">0 messages</span>
+          </div>
+          <button class="chat-change-name" id="changeName" title="Change name">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-welcome">
+            <p>Welcome to the group! Share your travel plans, birthday wishes, or anything else with the crew.</p>
+          </div>
+        </div>
+
+        <div class="chat-input-area">
+          <div class="chat-category-selector">
+            <button class="category-btn active" data-category="general">General</button>
+            <button class="category-btn" data-category="logistics">Logistics</button>
+            <button class="category-btn" data-category="birthday">Birthday Wishes</button>
+          </div>
+          <div class="chat-input-group">
+            <textarea id="messageInput" placeholder="Type a message..." rows="1" maxlength="1000"></textarea>
+            <button id="sendBtn" class="btn-send" aria-label="Send message">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Info Section -->
+  <section class="section travel-section" id="travel">
+    <div class="container">
+      <h2 class="section-title">Travel Information</h2>
+      <p class="section-subtitle">Everything you need to know for the trip</p>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">&#9992;</div>
+          <h3>Getting There</h3>
+          <p>Fly into Keflavik International Airport (KEF). Private transfers will be arranged from the airport to the hotel &mdash; approximately 90 minutes.</p>
+          <p class="info-note">If arriving at different times, smaller vans will be grouped for transfers.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">&#127968;</div>
+          <h3>Accommodation</h3>
+          <div class="accommodation-list">
+            <div class="accommodation-item">
+              <strong>Nights 1 &amp; 2:</strong> Black Sand Hotel
+              <span class="accommodation-detail">Classic Rooms &amp; Connecting Family Rooms</span>
+            </div>
+            <div class="accommodation-item">
+              <strong>Nights 3 &amp; 4:</strong> Blue Lagoon Retreat
+              <span class="accommodation-detail">Moss Junior Suites &amp; Family Suite</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">&#128652;</div>
+          <h3>Transportation</h3>
+          <p>Private coach seating up to 29 travellers provided for all touring days, along with a sit-in private guide.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">&#127860;</div>
+          <h3>Meals</h3>
+          <p>Breakfast included daily with your accommodation. A private lunch at Fri&eth;heimar is arranged on Day 2.</p>
+          <p class="info-note">Other lunches and dinners are on your own &mdash; recommendations will be provided!</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">&#128188;</div>
+          <h3>What to Pack</h3>
+          <ul class="packing-list">
+            <li>Warm layers &amp; waterproof jacket</li>
+            <li>Comfortable walking shoes</li>
+            <li>Swimsuit (for Blue Lagoon!)</li>
+            <li>Camera</li>
+            <li>Dressy outfit for celebration dinner</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">&#9889;</div>
+          <h3>Good to Know</h3>
+          <ul class="packing-list">
+            <li>Iceland uses Icelandic Kr&oacute;na (ISK)</li>
+            <li>Cards accepted almost everywhere</li>
+            <li>No tipping culture in Iceland</li>
+            <li>Late July: ~20 hours of daylight!</li>
+            <li>Average temp: 10&ndash;15&deg;C (50&ndash;59&deg;F)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-title">Anisa's 60th Birthday &middot; Iceland 2026</p>
+        <p class="footer-subtitle">An adventure of a lifetime, shared with the people who matter most.</p>
+        <div class="footer-divider"></div>
+        <p class="footer-note">Made with love for Anisa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
