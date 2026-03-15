@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇮🇸</text></svg>">
 </head>
@@ -211,32 +212,18 @@
 
       <div class="map-grid">
         <div class="map-container">
-          <div class="map-label">Southern Iceland &mdash; Our Journey</div>
-          <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-22.8%2C63.6%2C-19.5%2C64.5&layer=mapnik&marker=64.1466%2C-21.9426"
-            class="map-iframe"
-            loading="lazy"
-            title="Map of Southern Iceland showing our route"
-          ></iframe>
+          <div class="map-label">Iceland</div>
+          <div id="map1" class="map-div"></div>
+        </div>
+
+        <div class="map-container">
+          <div class="map-label">Places We're Visiting</div>
+          <div id="map2" class="map-div"></div>
           <div class="map-legend">
             <div class="legend-item"><span class="legend-dot" style="background:#c9a84c"></span> Reykjavik</div>
             <div class="legend-item"><span class="legend-dot" style="background:#4ecdc4"></span> Golden Circle</div>
             <div class="legend-item"><span class="legend-dot" style="background:#6c5ce7"></span> Blue Lagoon</div>
             <div class="legend-item"><span class="legend-dot" style="background:#fd79a8"></span> Black Sand Hotel</div>
-          </div>
-        </div>
-
-        <div class="map-container">
-          <div class="map-label">Iceland Overview</div>
-          <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-25.0%2C63.0%2C-13.0%2C66.8&layer=mapnik&marker=63.88%2C-22.44"
-            class="map-iframe"
-            loading="lazy"
-            title="Overview map of Iceland"
-          ></iframe>
-          <div class="map-legend">
-            <div class="legend-item"><span class="legend-dot" style="background:#c9a84c"></span> Keflavik Airport (KEF)</div>
-            <div class="legend-item"><span class="legend-dot" style="background:#4ecdc4"></span> Our adventure area</div>
           </div>
         </div>
       </div>
@@ -377,6 +364,7 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

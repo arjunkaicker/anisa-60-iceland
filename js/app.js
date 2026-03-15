@@ -349,6 +349,39 @@
     });
   }
 
+  // ---- Maps ----
+  function initMaps() {
+    // Map 1: Overview of Iceland
+    const map1 = L.map('map1', { scrollWheelZoom: false }).setView([64.963, -19.021], 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 18,
+    }).addTo(map1);
+
+    // Map 2: Trip locations with markers
+    const map2 = L.map('map2', { scrollWheelZoom: false }).setView([64.1, -20.7], 8);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 18,
+    }).addTo(map2);
+
+    var locations = [
+      { name: 'Reykjavik', lat: 64.1466, lng: -21.9426 },
+      { name: 'Black Sand Hotel', lat: 63.6191, lng: -19.6498 },
+      { name: 'Fri\u00F0heimar Greenhouse', lat: 64.1297, lng: -20.6627 },
+      { name: 'Gullfoss', lat: 64.3271, lng: -20.1199 },
+      { name: '\u00DEingvellir', lat: 64.2559, lng: -21.1290 },
+      { name: 'Geysir', lat: 64.3103, lng: -20.3024 },
+      { name: 'Blue Lagoon', lat: 63.8804, lng: -22.4495 },
+      { name: 'Raufarh\u00F3lshellir Lava Tunnel', lat: 63.9364, lng: -21.3961 },
+      { name: 'Keflav\u00EDk Airport (KEF)', lat: 63.9850, lng: -22.6056 },
+    ];
+
+    locations.forEach(function (loc) {
+      L.marker([loc.lat, loc.lng]).addTo(map2).bindPopup(loc.name);
+    });
+  }
+
   // ---- Initialize ----
   function init() {
     updateCountdown();
@@ -357,6 +390,7 @@
     initSmoothScroll();
     initTimelineAnimations();
     initChat();
+    initMaps();
   }
 
   if (document.readyState === 'loading') {
