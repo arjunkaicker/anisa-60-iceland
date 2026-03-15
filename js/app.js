@@ -359,7 +359,7 @@
     }).addTo(map1);
 
     // Map 2: Trip locations with markers
-    const map2 = L.map('map2', { scrollWheelZoom: false }).setView([64.1, -20.7], 8);
+    const map2 = L.map('map2', { scrollWheelZoom: false });
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       maxZoom: 18,
@@ -377,9 +377,13 @@
       { name: 'Keflav\u00EDk Airport (KEF)', lat: 63.9850, lng: -22.6056 },
     ];
 
+    var markers = L.featureGroup();
     locations.forEach(function (loc) {
-      L.marker([loc.lat, loc.lng]).addTo(map2).bindPopup(loc.name);
+      var marker = L.marker([loc.lat, loc.lng]).addTo(map2);
+      marker.bindTooltip(loc.name, { permanent: true, direction: 'top', offset: [0, -10], className: 'map-label-tooltip' });
+      markers.addLayer(marker);
     });
+    map2.fitBounds(markers.getBounds().pad(0.15));
   }
 
   // ---- Initialize ----

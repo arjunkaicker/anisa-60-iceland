@@ -634,6 +634,21 @@ body {
   height: 320px;
 }
 
+.map-label-tooltip {
+  background: rgba(10, 14, 26, 0.85);
+  color: var(--frost);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.map-label-tooltip::before {
+  border-top-color: rgba(201, 168, 76, 0.3) !important;
+}
+
 .map-legend {
   display: flex;
   flex-wrap: wrap;
